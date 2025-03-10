@@ -1,0 +1,91 @@
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: black;
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
+.header-index {
+    padding: 20px;
+    height: 400px;
+    background-color: black;
+    text-align: center;
+    background-image: url(Image/Hafidz\ 1.jpg); 
+    background-size: cover; 
+    background-position: center; 
+    border-bottom: 3px solid #444; 
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+a {
+    color: white;
+    text-transform: uppercase;
+    margin-top: 40px;
+    text-decoration: none; 
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #82d5ff;
+}
+
+.sections-container {
+    background-image: url(Image/Background.jpg); /* Add background image to the container */
+    background-size: cover; /* Ensure the image covers the entire container */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat;
+}
+
+.features-index {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; /* Space out the figures evenly */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.features-index figure {
+    margin: 20px;
+    text-align: center;
+    flex: 1 1 300px; /* Allow figures to grow and shrink */
+    max-width: 300px; /* Limit maximum width */
+}
+
+.features-index figure img {
+    border: 1px solid white;
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    box-shadow: gray 0px 0px 10px;
+    border-radius: 50%;
+    transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.features-index figure img:hover {
+    transform: scale(1.1); /* Enlarge image on hover */
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+} 
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer {
+    background: black;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-top: 1px solid #444; /* Add a top border for separation */
+}
