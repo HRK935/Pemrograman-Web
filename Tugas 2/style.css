@@ -1,0 +1,295 @@
+/*Body*/
+body {
+    color: white;
+    background-color: black;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+iframe, img {
+    margin: auto;
+}
+
+table {
+    margin: auto; 
+    border-collapse: collapse; 
+    width: 50%;
+}
+
+th, td {
+    padding: 10px; 
+    text-align: center; 
+}
+
+p {
+    padding: 50px;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 3px solid #444;
+}
+
+header a {
+    color: white;
+    text-transform: uppercase;
+    margin-top: 40px;
+    text-decoration: none; 
+    transition: color 0.3s ease; 
+}
+
+header a:hover {
+    color: #82d5ff; 
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+footer {
+    background: black;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    border-top: 1px solid #444;
+}
+
+.features {
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 20px;
+    display: flex;
+    text-align: center;
+}
+
+.features h1 {
+    text-align: center;
+}
+
+.features figure {
+    margin: 20px;
+    text-align: center;
+    flex: 1 1 300px;
+    max-width: 100%;
+}
+
+.features figure h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.features figure p {
+    font-size: 16px;
+    color: white;
+}
+
+.features iframe, .features img {
+    max-width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.center {
+    padding: 100px;
+    font-size: 50px;
+}
+
+.sections-container {
+    background-image: url(Image/Background.jpg);
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+
+/*Index*/
+.header-index {
+    height: 400px;
+    background-color: black;
+    background-image: url(Image/Hafidz\ 1.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.features-index {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.features-index figure {
+    margin: 20px;
+    text-align: center;
+    flex: 1 1 400px;
+    max-width: 400px; 
+    position: relative; 
+}
+
+.features-index figure img {
+    border: 1px solid white;
+    width: 100%; 
+    height: auto; 
+    box-shadow: gray 0px 0px 10px;
+    border-radius: 10px; 
+    transition: transform 0.3s ease; 
+}
+
+.features-index figure img:hover {
+    transform: scale(1.1); 
+}
+
+.features-index figcaption {
+    margin-top: 10px;
+    font-size: 18px;
+    color: white;
+}
+
+.features-index figure .text-overlay {
+    position: absolute; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    font-size: 24px; 
+    font-weight: bold; 
+    text-align: center; 
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 10px; 
+    border-radius: 5px; 
+}
+
+@media screen and (max-width: 800px) {
+    .features-index {
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .features-index figure {
+        margin: 20px 0; 
+    }
+
+    header {
+        height: 300px; 
+    }
+
+    header a {
+        margin-top: 20px;
+    }
+}
+
+
+/*About*/
+.body-about {
+    background-image: url('Image/Background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.header-about {
+    height: 600px;
+}
+
+
+/*Content*/
+.body-content {
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.header-content {
+    height: 400px;
+    background-color: black;
+    text-align: center;
+    background-image: url(Image/Background\ 2.jpeg); 
+    background-size: cover; 
+    background-position: center; 
+}
+
+/*Profil*/
+.body-profile {
+    background-image: url('Image/Background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.h3-profile {
+    margin-top: 100px;
+    text-align: justify;
+}
+
+h4 {
+    text-align: left;
+}
+
+.features-profile {
+    background-color: rgba(0, 0, 0, 0.7); 
+    color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    flex-wrap: wrap; 
+}
+
+.features-profile figure {
+    margin: 20px;
+    text-align: center;
+    flex: 1 1 300px; 
+    max-width: 100%;
+}
+
+.features-profile figure h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.features-profile figure p {
+    font-size: 16px;
+    color: #555;
+}
+
+.features-profile iframe, .features-profile img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/*IDK*/
+.body-IDK {
+    background-image: url('Image/Background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.center-img {
+    width: 100%;
+    border: 1px solid #ccc;
+}
+
+.background {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.background img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}

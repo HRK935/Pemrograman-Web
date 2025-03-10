@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Table</title>
+    <style>
+        /* Center the table */
+        table {
+            margin: auto;
+            border-collapse: collapse; /* Optional: Merges table borders */
+            width: 50%; /* Optional: Set a width for the table */
+        }
+
+        th, td {
+            border: 1px solid black; /* Optional: Add borders to cells */
+            padding: 10px; /* Optional: Add padding to cells */
+            text-align: center; /* Optional: Center text in cells */
+        }
+        
+        iframe, img {
+            max-width: 150%;
+            height: auto; 
+            width: auto;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td rowspan="3">
+                <img width="560" height="315" src="Image/LOPS.jpg" alt="">
+            </td>
+            <td>
+                <audio src="Audio/Far East Princess.mp3" controls></audio>
+                <figcaption>Far East Princess</figcaption>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <audio src="Audio/Quixotic.mp3" controls></audio>
+                <figcaption>Quixotic</figcaption>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <audio src="Audio/Proposal Flower Wolf Part 1.mp3" controls></audio>
+                <figcaption>Proposal Flower Wolf Part 1</figcaption>
+            </td>
+        </tr>
+    </table>
+    <h1 style="text-align: center;">Centered Table Example</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+                <th>Header 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Row 1, Cell 1</td>
+                <td>Row 1, Cell 2</td>
+                <td>Row 1, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 2, Cell 1</td>
+                <td>Row 2, Cell 2</td>
+                <td>Row 2, Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row 3, Cell 1</td>
+                <td>Row 3, Cell 2</td>
+                <td>Row 3, Cell 3</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
