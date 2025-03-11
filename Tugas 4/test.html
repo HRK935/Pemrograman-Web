@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .features {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap; 
+        }
+
+        .features figure {
+            margin: 20px;
+            text-align: center;
+            flex: 1 1 400px;
+            max-width: 400px; 
+            position: relative; 
+        }
+
+        .features figure img {
+            border: 1px solid white;
+            width: 100%; 
+            height: auto; 
+            box-shadow: gray 0px 0px 10px;
+            border-radius: 10px; 
+            transition: transform 0.3s ease; 
+        }
+
+        .features figure img:hover {
+            transform: scale(1.1); 
+        }
+    </style>
+</head>
+<body>
+    <div class="sections-container">
+        <section class="features">
+            <figure>           
+                    <img width="560" height="315" src="Image/download_enhanced.jpeg" alt="Sample Image">
+                    <div class="text-overlay"></div>
+            </figure>
+            <figure>
+                    <img width="560" height="315" src="Image/download_enhanced.jpeg" alt="Sample Image">
+                    <div class="text-overlay"></div> 
+            </figure>
+            <figure>
+                
+                    <img width="560" height="315" src="Image/download_enhanced.jpeg" alt="Sample Image">
+                    <div class="text-overlay"></div> 
+            </figure>
+        </section>
+        <hr>
+        <section class="features">
+            <figure>                         
+                    <img width="560" height="315" src="Image/download_enhanced.jpeg" alt="Sample Image">
+                    <div class="text-overlay"></div>                
+            </figure>
+            <figure>
+                    <img width="560" height="315" src="Image/download_enhanced.jpeg" alt="Sample Image">
+                    <div class="text-overlay"></div> 
+            </figure>
+            <figure>
+                    <img width="560" height="315" src="Image/download_enhanced.jpeg" alt="Sample Image">
+                    <div class="text-overlay"></div> 
+            </figure>
+        </section>
+        <hr>
+        <section class="features">
+            <figure>
+                    <img width="560" height="315" src="Image/download_enhanced.jpeg" alt="Sample Image">
+                    <div class="text-overlay"></div> 
+            </figure>
+        </section>
+    </div>
+</body>
+</html>

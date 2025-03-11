@@ -6,49 +6,126 @@
     <title>My Website</title>
     <style>
         body {
+            color: white;
+            background-color: black;
             font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            padding: 20px;
+            height: 400px;
+            background-color: black;
+            text-align: center;
+            background-image: url(Image/Nightreign.jpg); /* Ensure the image path is correct */
+            background-size: cover; /* Changed to 'cover' for better responsiveness */
+            background-position: center; /* Center the background image */
+        }
+        
+        header a {
+            color: white;
+            text-transform: uppercase;
+            margin-top: 40px;
+            text-decoration: none; /* Remove underline from links */
+            transition: color 0.3s ease; /* Smooth color transition on hover */
+        }
+
+        header a:hover {
+            color: #82d5ff; /* Change link color on hover */
+        }
+
+        .features {
+            background-color: white;
+            color: gray;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around; /* Space out the figures evenly */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+
+        .features figure {
+            margin: 20px;
+            text-align: center;
+            flex: 1 1 300px; /* Allow figures to grow and shrink */
+            max-width: 300px; /* Limit maximum width */
+        }
+
+        .features figure h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .features figure p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        } 
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        footer {
+            background: black;
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-top: 1px solid #444; /* Add a top border for separation */
+        }
+
+        /* Responsive Design */
+        @media screen and (max-width: 800px) {
+            .features {
+                flex-direction: column; /* Stack figures vertically on smaller screens */
+                align-items: center; /* Center figures horizontally */
+            }
+
+            .features figure {
+                margin: 20px 0; /* Adjust margin for stacked layout */
+            }
+
+            header a {
+                margin-top: 20px; /* Reduce margin for smaller screens */
+            }
         }
     </style>
 </head>
 <body>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="about.html">About</a></li>
-    <li><a href="content.html">Content</a></li>
-    <li><a href="profile.html">Profile</a></li>
-    <center>
-        <h1>Minggu</h1>     
-        <h3>Di hari minggu saya dan adik saya sedang ingin bernostalgia dengan bermain game game lama Ps2 salah satu game yang saya mainkan adalah Mortal Kombat Shaolin Monks.</h3>
-        <img width="500" height="500" src="Image/download.jpeg" alt="">
-        <h3>Menurut saya game Mortal Kombat Shaolin Monks merupakan game cooperative terbaik pada zamannya menghadirkan pengalaman cooperative yang mulus. </h3>
-        <hr>
-        <hr>
-        <table>
-            <tr>
-                <th style="padding-right: 50px;">Halaman Sebelumnya</th>
-                <th>Halaman Selanjutnya</th>
-            </tr>
-            <tr>
-                <td style="padding-right: 50px;">
-                    <center>
-                        <figcaption>Hari Rabu</figcaption>
-                        <a href="rabu.html">
-                            <img width="100" height="100" src="Image/Pointer Left.jpg" alt="Mulawarman University Campus">
-                        </a>
-                    </center>
-                </td>
-                <td>
-                    <center><figcaption>Hari Jumat</figcaption>
-                        <a href="jumat.html">
-                            <img width="100" height="100" src="Image/Pointer Right.jpg" alt="Mulawarman University Campus">
-                        </a>
-                    </center>
-                </td>
-            </tr>
-        </table>
-
-        <footer>
-            &copy; 2025 | Dibuat oleh Hafidz Ravi Kurniawan | NIM: 2305176050
-        </footer>
-    </center>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="content.html">Content</a></li>
+                <li><a href="pikachu.html">Pikachu</a></li>
+            </ul>
+        </nav>
+        <h1></h1> <!-- Added a title -->
+    </header>
+    <section class="features">
+        <figure>           
+            <h1>Hari Senin</h1>
+            <p>description</p>
+        </figure>
+        <figure>
+            <h1>Hari Selasa</h1>
+            <p>description</p>
+        </figure>
+        <figure>
+            <h1>Hari Kamis</h1>
+            <p>description</p>
+        </figure>
+    </section>
+    <footer>
+        &copy; 2025 | Dibuat oleh Hafidz Ravi Kurniawan | NIM: 2305176050 <!-- Added footer content -->
+    </footer>
 </body>
 </html>
