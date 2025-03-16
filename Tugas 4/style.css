@@ -1,0 +1,30 @@
+.features-index {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap; 
+}
+
+.features-index figure {
+    margin: 20px;
+    text-align: center;
+    flex: 1 1 400px;
+    max-width: 400px; 
+    position: relative; 
+}
+
+.features-index figure img {
+    border: 1px solid white;
+    width: 100%; 
+    height: auto; 
+    box-shadow: gray 0px 0px 10px;
+    border-radius: 10px; 
+    transition: transform 0.3s ease; 
+}
+
+.features-index figure img:hover {
+    transform: scale(1.1); 
+}
+

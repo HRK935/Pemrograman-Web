@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <style>
+        body {
+            color: white;
+            background-color: black;
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            background-image: url('Image/Background.jpg');
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+        }
+        
+        h3 {
+            margin-top: 100px;
+            text-align: justify;
+        }
+
+        h4 {
+            text-align: left;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        header a {
+            color: white;
+            text-transform: uppercase;
+            margin-top: 40px;
+            text-decoration: none; 
+            transition: color 0.3s ease;
+        }
+
+        header a:hover {
+            color: #82d5ff;
+        }
+
+        .features {
+            background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+            color: white;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around; /* Space out the figures evenly */
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
+        }
+
+        .features figure {
+            margin: 20px;
+            text-align: center;
+            flex: 1 1 300px; /* Allow figures to grow and shrink */
+            max-width: 100%; /* Ensure figures don't exceed container width */
+        }
+
+        .features figure h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .features figure p {
+            font-size: 16px;
+            color: #555;
+        }
+
+        .features iframe, .features img {
+            max-width: 100%; /* Make iframe and images responsive */
+            height: auto; /* Maintain aspect ratio */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+        } 
+
+        li {
+            display: inline-block;
+            margin-right: 20px;
+        }
+
+        footer {
+            background: black
+            padding: 20px;
+            color: white;
+            text-align: center;
+            border-top: 1px solid #444; /* Add a top border for separation */
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="content.html">Content</a></li>
+                <li><a href="contact.html">Profile</a></li>
+            </ul>
+        </nav>
+        <h1>Profil</h1>
+        <section class="features">
+            <figure>           
+                <img width="300" height="315" src="Image/Profile1.png" alt="">
+            </figure>
+            <figure>           
+                <h3>Perkenalkan nama saya Hafidz Ravi Kurniawan, saya adalah Mahasiswa Jurusan Pendidikan Komputer semester 4.</h3>
+                <h4>Contact:</h4>
+                <h4>Wa: 0820194678993</h4>
+                <h4>Instagram: @hapisxd4k</h4>
+                <h4>Email: hafidzkurniawan757@gmail.com</h4>
+            </figure>
+        </section>
+    </header>
+    <footer>
+        &copy; 2025 | Dibuat oleh Hafidz Ravi Kurniawan | NIM: 2305176050
+    </footer>
+</body>
+</html>
